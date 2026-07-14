@@ -47,6 +47,9 @@ proven with an out-of-band callback, not an assumption.
   root-cause analysis → OOB proof → false-positive ruling-out → reproducibility →
   impact-escalation attempt (including what *didn't* work and why that's reported
   honestly rather than inflated)
+- [`WALKTHROUGH_SIMPLE.md`](./WALKTHROUGH_SIMPLE.md) — the same story in plain English,
+  no jargon, with a hotel-front-desk analogy. Start here if you're new to SSRF or just
+  want the fast, reviewable overview.
 - [`poc/validate_merchant_ssrf.py`](./poc/validate_merchant_ssrf.py) — a generic,
   reusable PoC script (targets a placeholder host by default; requires you to pass
   your own authorized target)
