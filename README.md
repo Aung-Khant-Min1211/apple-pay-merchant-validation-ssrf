@@ -4,7 +4,7 @@
 > checkout integration, and how it was found, proven, and ruled *in* (not just
 > assumed) during a real bug bounty engagement.
 
-**Status:** Disclosed to the affected vendor through a private bug bounty program.
+**Status:** Disclosed to the affected vendor through their bug bounty program's coordinated-disclosure process.
 Target identity, endpoint paths, and internal identifiers in this write-up have been
 **genericized/redacted** — this repo documents the *methodology*, not a live,
 unpatched target. Do not point any of the example commands at a system you don't
@@ -95,8 +95,8 @@ initial discovery — every confirmatory step was a single, hand-crafted request
 
 ## Responsible disclosure
 
-This finding was reported to the affected vendor through their private bug bounty
-program before this write-up was published. Real target details are withheld here
+This finding was reported to the affected vendor through their bug bounty program's
+coordinated-disclosure process before this write-up was published. Real target details are withheld here
 until the vendor confirms remediation and authorizes public disclosure, per standard
 coordinated-disclosure practice.
 
