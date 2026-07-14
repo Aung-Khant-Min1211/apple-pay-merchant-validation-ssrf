@@ -12,6 +12,24 @@ have explicit written authorization to test.
 
 ---
 
+## For reviewers — read in this order
+
+New to this repo? Follow this path top to bottom:
+
+1. **[`WALKTHROUGH_SIMPLE.md`](./WALKTHROUGH_SIMPLE.md)** — plain-English overview with an
+   analogy. Start here to understand *what* the bug is, even with no SSRF background.
+2. **This README (`TL;DR` below)** — the precise, technical one-paragraph summary.
+3. **[`WALKTHROUGH.md`](./WALKTHROUGH.md)** — the full experiment log: recon → discovery →
+   root-cause → proof → false-positive ruling-out → reproduction → honest limits.
+4. **[`docs/sequence-diagram.md`](./docs/sequence-diagram.md)** — why the HTTP 500 does
+   *not* contradict the SSRF (the one point that trips people up).
+5. **[`poc/validate_merchant_ssrf.py`](./poc/validate_merchant_ssrf.py)** — the actual
+   proof-of-concept script.
+6. **[`demo/`](./demo/)** — run `./demo/run_demo.sh` to watch the SSRF fire safely on
+   localhost, then `./demo/run_demo.sh --secure` to watch the fix block it.
+
+---
+
 ## TL;DR
 
 A retail storefront running Salesforce Commerce Cloud (SFCC) exposed a custom Apple
