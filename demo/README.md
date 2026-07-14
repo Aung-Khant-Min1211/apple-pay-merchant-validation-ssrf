@@ -14,6 +14,18 @@ Everything binds to `127.0.0.1`. Nothing external is contacted.
 | `vulnerable_server.py` | Mock SFCC storefront with the vulnerable `ApplePay-ValidateMerchant` controller. Stands in for the target backend. |
 | `collaborator.py` | Local out-of-band listener — the role interactsh / Burp Collaborator played in the real hunt. Any hit here = proof of SSRF. |
 | `run_demo.sh` | Starts both, fires the PoC, and prints the captured callback. |
+| `record_demo.sh` | Paced driver that runs both scenarios back-to-back — used to record the asciinema capture. |
+| `demo.cast` | An [asciinema](https://asciinema.org) recording of the full demo (vulnerable run + the fix). |
+
+## Watch the recording
+
+```bash
+asciinema play demo/demo.cast
+```
+
+(Install asciinema with `pipx install asciinema` if you don't have it.) The capture
+shows Scenario 1 — the SSRF firing and the merchant identity leaking to the
+collaborator — then Scenario 2, the patched controller rejecting the same request.
 
 ## Run it
 
